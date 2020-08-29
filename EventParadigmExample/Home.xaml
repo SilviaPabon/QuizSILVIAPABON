@@ -1,0 +1,21 @@
+﻿<Page x:Class="EventParadigmExample.Home"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:EventParadigmExample"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="790"
+      Title="Home">
+
+    <Grid Background="#FFFFBCBC">
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="485,0,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Center" Height="298" Width="278" Background="White"/>
+        <TextBox Name="txtProductName" HorizontalAlignment="Left" Margin="238,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Product Name" HorizontalAlignment="Left" Margin="111,70,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="244,258,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
+        <Label Content="Category" HorizontalAlignment="Left" Margin="127,120,0,0" VerticalAlignment="Top"/>
+        <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="258,133,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <RadioButton GroupName="category" Content="Electronics" HorizontalAlignment="Left" Margin="256,160,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <Label Name="lblCategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="137,175,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Page>
