@@ -31,6 +31,7 @@
         <Label Content="Test Library Materials" HorizontalAlignment="Left" Margin="215,11,0,0" VerticalAlignment="Top"/>
         <CheckBox x:Name="chkTerms" Content="I agree to the terms and conditions" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" FontSize="10"/>
         <TextBox x:Name="txtDate" Visibility="Hidden" HorizontalAlignment="Left" Margin="303,201,0,0" Text="{Binding ElementName=calCalendario, Path=SelectedDate, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnLogout" Content="LogOut" HorizontalAlignment="Center" Margin="0,310,0,0" VerticalAlignment="Top" Width="56" Click="btnLogout_Click"/>
 
 
 
