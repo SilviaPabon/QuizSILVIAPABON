@@ -11,8 +11,8 @@
     <Grid Background="#FFFFBCBC">
         <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="485,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="298" Width="278" Background="White"/>
         <TextBox Name="txtProductName" HorizontalAlignment="Left" Margin="172,52,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="22"/>
-        <Label Content="User Name" HorizontalAlignment="Left" Margin="57,51,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="172,320,0,0" VerticalAlignment="Top" Click="btnSave_Click" Width="150"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="59,52,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="172,310,0,0" VerticalAlignment="Top" Click="btnSave_Click" Width="150"/>
         <Label Content="Select the IQ Test" HorizontalAlignment="Left" Margin="57,90,0,0" VerticalAlignment="Top"/>
         <Label Name="lblCategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="137,175,0,0" VerticalAlignment="Top"/>
         <ComboBox x:Name="cmbTestlist" HorizontalAlignment="Left" Margin="172,93,0,0" VerticalAlignment="Top" Width="204">
@@ -26,10 +26,12 @@
             <ComboBoxItem Content="Test de Goodenough"/>
             <ComboBoxItem/>
         </ComboBox>
+        <Label Content="Select the Loan Date:" HorizontalAlignment="Left" Margin="57,121,0,0" VerticalAlignment="Top"/>
         <Calendar x:Name="calCalendario" HorizontalAlignment="Left" Margin="57,144,0,0" VerticalAlignment="Top" Height="154" Width="180" SelectedDatesChanged="calCalendario_SelectedDatesChanged"/>
         <Label Content="Test Library Materials" HorizontalAlignment="Left" Margin="215,11,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="chkTerms" Content="I agree to the terms and conditions" HorizontalAlignment="Left" Margin="283,289,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <CheckBox x:Name="chkTerms" Content="I agree to the terms and conditions" HorizontalAlignment="Left" Margin="258,283,0,0" VerticalAlignment="Top" FontSize="10"/>
         <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="303,201,0,0" Text="{Binding ElementName=calCalendario, Path=SelectedDate, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
 
 
     </Grid>

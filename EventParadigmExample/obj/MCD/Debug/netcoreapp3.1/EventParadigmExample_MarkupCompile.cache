@@ -1,10 +1,10 @@
 ﻿EventParadigmExample
-1.0.0.0
+
 
 winexe
 C#
 .cs
-C:\Users\HERNAN GOMEZ\OneDrive - UPB\SEMESTRE 2\Paradigmas programación\QuizSILVIAPABÓN\EventParadigmExample\obj\Debug\netcoreapp3.1\
+C:\Users\HERNAN GOMEZ\OneDrive - UPB\SEMESTRE 2\Paradigmas programación\QuizSILVIAPABÓN\EventParadigmExample\obj\MCD\Debug\netcoreapp3.1\
 EventParadigmExample
 none
 false
@@ -12,9 +12,9 @@ TRACE;DEBUG;NETCOREAPP;NETCOREAPP3_1
 C:\Users\HERNAN GOMEZ\OneDrive - UPB\SEMESTRE 2\Paradigmas programación\QuizSILVIAPABÓN\EventParadigmExample\App.xaml
 32103201261
 
-71416233279
+5-1188154960
 1921654412462
 Home.xaml;login.xaml;MainWindow.xaml;
 
-False
+True
 

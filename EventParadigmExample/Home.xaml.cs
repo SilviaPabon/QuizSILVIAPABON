@@ -25,23 +25,30 @@ namespace EventParadigmExample
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
+            
             if (chkTerms.IsChecked == true)
             {
                 string productName = txtProductName.Text;
                 string testList = cmbTestlist.Text;
-                calCalendario.SelectedDate = DateTime.Now.AddDays(1);
                 string date = txtDate.Text;
-                txtResults.Text = "El Usuario: "+productName+" está alquilando: "+testList+"\n"+" debe devolver "+date;
+                txtDate.Text = calCalendario.SelectedDate.ToString();
+                txtResults.Text = "The user: "+productName+", borrowed: "+testList+" this date: "+date;
+                if ((bool)chkTerms.IsChecked)
+                {
+                    chkTerms.IsChecked = false;
+                }
             }
             else 
             {
                 MessageBox.Show("You didn't accept the terms and conditions");
             }
-             
-                
 
             
+
+
+
         }
+        
 
         private void calCalendario_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {

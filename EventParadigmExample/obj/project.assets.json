@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\Teoría\\08_28_POE_C#\\EventParadigmExample\\EventParadigmExample.csproj",
+      "projectUniqueName": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\QuizSILVIAPABÓN\\EventParadigmExample\\EventParadigmExample.csproj",
       "projectName": "EventParadigmExample",
-      "projectPath": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\Teoría\\08_28_POE_C#\\EventParadigmExample\\EventParadigmExample.csproj",
+      "projectPath": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\QuizSILVIAPABÓN\\EventParadigmExample\\EventParadigmExample.csproj",
       "packagesPath": "C:\\Users\\HERNAN GOMEZ\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\Teoría\\08_28_POE_C#\\EventParadigmExample\\obj\\",
+      "outputPath": "C:\\Users\\HERNAN GOMEZ\\OneDrive - UPB\\SEMESTRE 2\\Paradigmas programación\\QuizSILVIAPABÓN\\EventParadigmExample\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HERNAN GOMEZ\\AppData\\Roaming\\NuGet\\NuGet.Config",
