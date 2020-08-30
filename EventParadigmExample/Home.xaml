@@ -9,13 +9,28 @@
       Title="Home">
 
     <Grid Background="#FFFFBCBC">
-        <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="485,0,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Center" Height="298" Width="278" Background="White"/>
-        <TextBox Name="txtProductName" HorizontalAlignment="Left" Margin="238,74,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Product Name" HorizontalAlignment="Left" Margin="111,70,0,0" VerticalAlignment="Top"/>
-        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="244,258,0,0" VerticalAlignment="Top" Click="btnSave_Click"/>
-        <Label Content="Category" HorizontalAlignment="Left" Margin="127,120,0,0" VerticalAlignment="Top"/>
-        <RadioButton GroupName="category" Content="Clothes" HorizontalAlignment="Left" Margin="258,133,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
-        <RadioButton GroupName="category" Content="Electronics" HorizontalAlignment="Left" Margin="256,160,0,0" VerticalAlignment="Top" Checked="RadioButton_Checked"/>
+        <TextBlock Name="txtResults" HorizontalAlignment="Left" Margin="485,0,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Height="298" Width="278" Background="White"/>
+        <TextBox Name="txtProductName" HorizontalAlignment="Left" Margin="172,52,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="204" Height="22"/>
+        <Label Content="User Name" HorizontalAlignment="Left" Margin="57,51,0,0" VerticalAlignment="Top"/>
+        <Button Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="172,320,0,0" VerticalAlignment="Top" Click="btnSave_Click" Width="150"/>
+        <Label Content="Select the IQ Test" HorizontalAlignment="Left" Margin="57,90,0,0" VerticalAlignment="Top"/>
         <Label Name="lblCategory" Visibility="Hidden" Content="Label" HorizontalAlignment="Left" Margin="137,175,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbTestlist" HorizontalAlignment="Left" Margin="172,93,0,0" VerticalAlignment="Top" Width="204">
+            <ComboBoxItem Content="Escala Inteligencia Standford-Binet"/>
+            <ComboBoxItem Content="(WAIS) Escala de Inteligencia para adultos de Wechsler"/>
+            <ComboBoxItem Content="(WISC) Escala de Inteligencia para el nivel escolar de Wechsler"/>
+            <ComboBoxItem Content="(WPPSI) Escala de Inteligencia para los niveles preescolar y primario de Wechsler"/>
+            <ComboBoxItem Content="Beta II-R"/>
+            <ComboBoxItem Content="(Raven) Test de Matrices Progresivas "/>
+            <ComboBoxItem Content="Test de Dominós"/>
+            <ComboBoxItem Content="Test de Goodenough"/>
+            <ComboBoxItem/>
+        </ComboBox>
+        <Calendar x:Name="calCalendario" HorizontalAlignment="Left" Margin="57,144,0,0" VerticalAlignment="Top" Height="154" Width="180" SelectedDatesChanged="calCalendario_SelectedDatesChanged"/>
+        <Label Content="Test Library Materials" HorizontalAlignment="Left" Margin="215,11,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chkTerms" Content="I agree to the terms and conditions" HorizontalAlignment="Left" Margin="283,289,0,0" VerticalAlignment="Top" FontSize="10"/>
+        <TextBox x:Name="txtDate" HorizontalAlignment="Left" Margin="303,201,0,0" Text="{Binding ElementName=calCalendario, Path=SelectedDate, StringFormat=d, UpdateSourceTrigger=PropertyChanged}" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+
     </Grid>
 </Page>

@@ -25,19 +25,27 @@ namespace EventParadigmExample
 
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
-            string productName = txtProductName.Text;
-            string category = lblCategory.Content.ToString();
+            if (chkTerms.IsChecked == true)
+            {
+                string productName = txtProductName.Text;
+                string testList = cmbTestlist.Text;
+                calCalendario.SelectedDate = DateTime.Now.AddDays(1);
+                string date = txtDate.Text;
+                txtResults.Text = "El Usuario: "+productName+" está alquilando: "+testList+"\n"+" debe devolver "+date;
+            }
+            else 
+            {
+                MessageBox.Show("You didn't accept the terms and conditions");
+            }
+             
+                
 
-            txtResults.Text = productName+"\n"+category;
+            
         }
 
-        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        private void calCalendario_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
-            RadioButton rb = sender as RadioButton;
-            if (rb.IsChecked.Value)
-            {
-                lblCategory.Content = rb.Content.ToString();
-            }
+
         }
     }
 }
