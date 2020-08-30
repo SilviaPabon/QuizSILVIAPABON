@@ -32,7 +32,8 @@ namespace EventParadigmExample
                 string testList = cmbTestlist.Text;
                 string date = txtDate.Text;
                 txtDate.Text = calCalendario.SelectedDate.ToString();
-                txtResults.Text = "The user: "+productName+", borrowed: "+testList+" this date: "+date;
+                string text = "-The user: " + productName + ", borrowed: " + testList + ", this date: " + date + ", accepting terms and conditions."+"\n";
+                txtResults.Text += text;
                 if ((bool)chkTerms.IsChecked)
                 {
                     chkTerms.IsChecked = false;
@@ -44,11 +45,7 @@ namespace EventParadigmExample
             }
 
             
-
-
-
         }
-        
 
         private void calCalendario_SelectedDatesChanged(object sender, SelectionChangedEventArgs e)
         {
